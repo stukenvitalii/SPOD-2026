@@ -1,0 +1,81 @@
+{
+  "mode": "ordered",
+  "processes": 3,
+  "rounds": 1,
+  "benchmark": false,
+  "initial": [
+    "start",
+    "s1",
+    "s2"
+  ],
+  "transitions": [
+    {
+      "id": "Send1",
+      "inputs": [
+        "s1"
+      ],
+      "outputs": [
+        "m1"
+      ]
+    },
+    {
+      "id": "Send2",
+      "inputs": [
+        "s2"
+      ],
+      "outputs": [
+        "m2"
+      ]
+    },
+    {
+      "id": "Print0",
+      "inputs": [
+        "start"
+      ],
+      "outputs": [
+        "q1"
+      ],
+      "print": 0
+    },
+    {
+      "id": "Recv1",
+      "inputs": [
+        "q1",
+        "m1"
+      ],
+      "outputs": [
+        "r1"
+      ]
+    },
+    {
+      "id": "Print1",
+      "inputs": [
+        "r1"
+      ],
+      "outputs": [
+        "q2"
+      ],
+      "print": 1
+    },
+    {
+      "id": "Recv2",
+      "inputs": [
+        "q2",
+        "m2"
+      ],
+      "outputs": [
+        "r2"
+      ]
+    },
+    {
+      "id": "Print2",
+      "inputs": [
+        "r2"
+      ],
+      "outputs": [
+        "done"
+      ],
+      "print": 2
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+.tools/
+**/build/
+**/results/
+*.exe
+*.o
+*.obj
+*.log
+.vscode/
+.idea/
+practical-01/report/qa/
+~$*.docx
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+practical-01/report/assets/*.png
+!practical-01/report/assets/runs.png

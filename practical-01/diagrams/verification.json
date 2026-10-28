@@ -1,0 +1,33 @@
+{
+  "unordered": {
+    "reachable_markings": 20,
+    "one_safe": true,
+    "unexpected_deadlocks": 0,
+    "all_markings_can_finish": true,
+    "print_sequences": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        1
+      ]
+    ]
+  },
+  "ordered": {
+    "reachable_markings": 14,
+    "one_safe": true,
+    "unexpected_deadlocks": 0,
+    "all_markings_can_finish": true,
+    "print_sequences": [
+      [
+        0,
+        1,
+        2
+      ]
+    ]
+  }
+}
